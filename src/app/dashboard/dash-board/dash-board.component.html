@@ -1,0 +1,30 @@
+<div>
+    Dashboarrd
+    Add or Edit movies here
+    Create a New Movie with timings
+    <form [formGroup]="addNewMovieForm" (submit)="addNewMovie()">
+<label for="movieTitle">Movie Title</label>
+<input type="text" id="movieTitle" formControlName="movieTitle">
+<br>
+<label for="heroEntrance">Hero Entrance</label> 
+<input type="text"formControlName="heroEntrance"  id="heroEntrance">  
+&nbsp; &nbsp;
+<label for="heroineEntrance">Heroine Entrance</label> 
+<input type="text" formControlName="heroineEntrance" id="heroineEntrance">  
+&nbsp; &nbsp;
+<label for="firstSong">firstSong </label> 
+<input type="text" formControlName="firstSong" id="firstSong">  
+<hr>
+
+<div>
+    <select formControlName="hoursVal" id="hoursVal">
+        <option *ngFor="let item of hours" value="item">{{item}}</option>
+    </select>
+</div>
+
+<button (click)="checkNums()">Check</button>
+
+<br>
+<input type="submit" value="add">
+    </form>
+</div>
