@@ -1,28 +1,137 @@
-# CineSnapAdmin
+# 🎬 Cine Snap Admin Portal
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+Cine Snap Admin Portal is a **web-based admin management system** built for Cine Snap to help **admin users manage movie data, timestamps, notifications, and user subscriptions** efficiently.  
+This portal allows admins to maintain accurate movie updates and ensure users receive **real-time alerts** smoothly.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📌 Project Overview
 
-## Code scaffolding
+In Cine Snap, users subscribe to movies and receive real-time notifications.  
+To manage everything from the backend, the Cine Snap Admin Portal provides a centralized dashboard where admin users can:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+✅ Add and manage movies  
+✅ Update movie timestamps (important for accurate alerts)  
+✅ Trigger / schedule notifications  
+✅ Monitor system updates using logging  
+✅ Manage users and subscriptions (admin-level operations)
 
-## Build
+This portal is designed with scalability in mind, following clean admin workflows and structured backend operations.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+---
 
-## Running unit tests
+## 🚀 Key Features
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+✅ Admin Login & Authentication  
+✅ Movie Management (Add / Edit / Update / Delete)  
+✅ Movie Timestamp Management (Real-time updates)  
+✅ Notification Management using Firebase Cloud Messaging (FCM)  
+✅ Backend automation using Firebase Cloud Functions  
+✅ Logging support for debugging and monitoring  
+✅ Admin-friendly UI for smooth operations  
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🧰 Tech Stack
 
-## Further help
+- Angular
+- TypeScript
+- Firebase Firestore
+- Firebase Cloud Functions
+- Firebase Cloud Messaging (FCM)
+- Firebase Logging / Monitoring
+- Webpack (if configured)
+- AI Tools: GitHub Copilot, ChatGPT
 
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## ⚙️ Setup & Run the Project
+
+✅ Step 1: Clone the Repository
+
+git clone https://github.com/srivatsav-kada/CineSnapAdmin.git
+cd CineSnapAdmin
+
+✅ Step 2: Install Dependencies
+
+npm install
+
+✅ Step 3: Run Angular Admin Portal (Web)
+
+ng serve
+
+✅ Open in Browser
+
+http://localhost:4200/
+
+---
+
+## 🔥 Firebase Setup (Required)
+
+✅ Step 1: Create a Firebase project (or use existing Cine Snap Firebase project)  
+✅ Step 2: Enable Firestore Database  
+✅ Step 3: Enable Cloud Functions  
+✅ Step 4: Enable Cloud Messaging (FCM)  
+✅ Step 5: Add Firebase config inside:
+
+src/environments/environment.ts
+
+Example:
+
+export const environment = {
+  production: false,
+  firebase: {
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_AUTH_DOMAIN",
+    projectId: "YOUR_PROJECT_ID",
+    messagingSenderId: "YOUR_SENDER_ID",
+    appId: "YOUR_APP_ID"
+  }
+};
+
+---
+
+## 👨‍💼 Admin Portal Responsibilities
+
+✅ Manage movie list  
+✅ Update movie timestamps for notification accuracy  
+✅ Publish important updates  
+✅ Support real-time backend automation  
+✅ Ensure smooth notification delivery to subscribed users  
+
+---
+
+## 📸 Screenshots (Optional)
+
+📌 Add portal screenshots inside:
+
+/screenshots
+
+Suggested screenshots:
+✅ Admin Login Page  
+✅ Admin Dashboard  
+✅ Movie List Page  
+✅ Timestamp Update Page  
+✅ Notification Panel  
+✅ Logs / Monitoring Page  
+
+---
+
+## 🛣️ Future Enhancements
+
+✅ Role-based access (Super Admin / Admin)  
+✅ Audit trail for all admin actions  
+✅ Better UI with advanced filtering & search  
+✅ Admin analytics dashboard (subscriptions / notifications stats)  
+✅ CI/CD deployment pipeline  
+
+---
+
+## 👨‍💻 Author
+
+Sri Vatsav  
+Frontend Developer | Angular | Firebase | Cordova  
+
+📌 GitHub: https://github.com/srivatsav-kada
+
+⭐ If you like this project, consider giving it a star!
